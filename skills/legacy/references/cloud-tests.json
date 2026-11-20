@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-20",
+  "status": "passed",
+  "network_scope": "127.0.0.1 HTTP synthetic MP4; official model metadata read-only HTTPS",
+  "model_metadata": {
+    "resolved": 9,
+    "weight_downloaded": false,
+    "weights_locally_hashed": false
+  },
+  "checks": [
+    "official_template_guard_valid",
+    "official_template_numeric_mutation_rejected",
+    "duplicate_submit_and_prompt_immutable",
+    "intent_queue_reconciliation",
+    "http_stream_download_real_mp4_decode_7_frames",
+    "resume_local_sha_reuse_and_redecode",
+    "wrong_expected_frames_rejected",
+    "visual_and_cache_dual_gate",
+    "cache_hash_mismatch_rejected",
+    "model_marker_invalid_state_not_unlink",
+    "foreign_marker_preserved",
+    "safe_bundle_extract",
+    "zip_traversal_rejected_before_create",
+    "upload_source_sha_plan",
+    "upload_changed_source_rejected",
+    "ledger_lock",
+    "remote_merged_channel_drain_mock",
+    "real_official_bare_graph_stage1_77_nodes_offline_validate",
+    "real_official_bare_graph_stage2_62_nodes_offline_validate",
+    "preview_excluded_final_node_7_frames",
+    "missing_output_node_rejected",
+    "upload_path_traversal_rejected",
+    "download_path_rejected_before_create_or_network",
+    "pending_metadata_download_rejected_before_create_or_network",
+    "previous_http_5000000_byte_stream_download",
+    "bare_prompt_normalized_without_graph_edit",
+    "preview_excluded_final_output_selector_real_decode",
+    "missing_expected_history_node_rejected",
+    "real_official_stage1_bare_77_node_offline_validate",
+    "real_official_stage2_bare_62_node_offline_validate"
+  ],
+  "not_tested": [
+    "real SSH/SFTP transport",
+    "remote pip installation",
+    "new cloud deployment",
+    "GPU inference",
+    "production footage visual quality"
+  ],
+  "notes": [
+    "No credentials or private asset paths included.",
+    "Current environment existing Python and cv2 only; no package installation."
+  ]
+}
