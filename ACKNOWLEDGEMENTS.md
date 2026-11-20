@@ -4,4 +4,4 @@
 
 感谢 **[linux.do 社区](https://linux.do/)** 的交流与分享。
 
-第三方插件的来源、许可证及必要版权声明保留在项目的第三方说明和对应材料中。
+第三方工作流、插件与模型的来源记录、许可证及必要版权声明另见THIRD_PARTY_NOTICES.md、audit/和各组件原始LICENSE/NOTICE文件。

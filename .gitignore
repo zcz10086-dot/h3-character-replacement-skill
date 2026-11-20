@@ -1,0 +1,13 @@
+# Large distributable files belong in GitHub Releases, after license review.
+release-assets/
+# Preserve full private/local staging without accidentally committing third-party bundles.
+skills/full/assets/runtime/
+__pycache__/
+*.pyc
+.env
+.env.*
+cloud.json
+batch.json
+known_hosts
+*.key
+*.pem
