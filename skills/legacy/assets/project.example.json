@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_id": "replace-this-project-id",
+  "source": "ABSOLUTE_PATH_TO_ORIGINAL_VIDEO",
+  "clean_source": "ABSOLUTE_PATH_TO_REVIEWED_CLEAN_VIDEO",
+  "output_dir": "ABSOLUTE_PATH_TO_PROJECT_OUTPUT",
+  "ssh": {
+    "host": "YOUR_HOST",
+    "port": 22,
+    "username": "YOUR_USER",
+    "password_env": "H3_SSH_PASSWORD",
+    "key_file": null,
+    "host_key_policy": "reject_unknown",
+    "remote_root": "/root/h3-runtime"
+  },
+  "workflow": {
+    "canvas": "ABSOLUTE_PATH_TO_OFFICIAL_CANVAS_JSON",
+    "canvas_sha256": null,
+    "stage1_template": "ABSOLUTE_PATH_TO_APPROVED_API_STAGE1_JSON",
+    "stage2_template": "ABSOLUTE_PATH_TO_APPROVED_API_STAGE2_JSON",
+    "approved_string_inputs": [],
+    "window_frames": 90,
+    "ref_image_size": "match"
+  },
+  "reference_binding": [
+    {"picture": 1, "identity": "P1", "path": "ABSOLUTE_PATH_TO_P1_IMAGE", "sha256": null},
+    {"picture": 2, "identity": "P2", "path": "ABSOLUTE_PATH_TO_P2_IMAGE", "sha256": null},
+    {"picture": 3, "identity": "P3", "path": "ABSOLUTE_PATH_TO_P3_IMAGE", "sha256": null}
+  ],
+  "preprocessing": {
+    "soft_subtitles": "ask",
+    "burned_subtitles": {"action": "review", "regions": [], "reviewed": false},
+    "watermarks": {"action": "review", "regions": [], "reviewed": false},
+    "preserve_scene_text": true
+  },
+  "timing": {"source_fps": null, "source_frames": null, "execution_fps": 24},
+  "shots": [],
+  "visual_acceptance": {"faces": true, "clothing": true, "identity": true, "occlusion": true, "original_actor_residue": true, "lip_motion": "review_with_user"},
+  "notes": "本文件是项目设计模板；cloud_runtime、comfy_batch、video_pipeline的实际命令配置以各自教程为准。先替换占位路径并审核，不能直接生产。"
+}
